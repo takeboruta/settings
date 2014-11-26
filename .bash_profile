@@ -1,4 +1,3 @@
-# WPB案件設定追加
 if [ -f ~/.bashrc ] ; then
 	. ~/.bashrc
 fi
