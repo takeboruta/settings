@@ -1,3 +1,9 @@
+
+
+sasfasda
+aasaf
+merge
+
 if [ -f ~/.bashrc ] ; then
 	. ~/.bashrc
 fi
