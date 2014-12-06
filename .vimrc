@@ -5,6 +5,7 @@ imap "" ""<Left>
 imap '' ''<Left>
 imap <> <><Left>
 
+
 nmap <F2>  <Plug>(altr-forward)
 
 set nocompatible
