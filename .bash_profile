@@ -1,7 +1,6 @@
 #プロンプト設定
 export PS1="[\u@ \w]\\$ "
 
-# WPB案件設定追加
 if [ -f ~/.bashrc ] ; then
 	. ~/.bashrc
 fi
