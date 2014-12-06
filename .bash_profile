@@ -1,19 +1,26 @@
+#プロンプト設定
+export PS1="[\u@ \w]\\$ "
+
+# WPB案件設定追加
 if [ -f ~/.bashrc ] ; then
 	. ~/.bashrc
 fi
 export APACHE_HOME=/etc/apache2
 # java default
-#export JAVA_HOME=/Library/Java/Home
+export JAVA_HOME=/Library/Java/Home
 # java8
 #export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home
 
 # java7
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
+#export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_71.jdk/Contents/Home
 
 #echo $JAVA_HOME
 export CATALINA_HOME=/project/tomcat6.0
 export M2_HOME=/project/olc/workspace/localtool/apache-maven-3.0.5
+export PATH=$PATH:/System/Library/activator-1.2.1
 
+alias .="cd ~"
+alias p="pwd"
 alias ls="ls -vF"
 alias l="ls"
 alias ll="ls -ail"
@@ -39,4 +46,4 @@ export EDITOR=/Applications/MacVim.app/Contents/MacOS/Vim
 alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
