@@ -16,7 +16,12 @@ export JAVA_HOME=/Library/Java/Home
 #echo $JAVA_HOME
 export CATALINA_HOME=/project/tomcat6.0
 export M2_HOME=/project/olc/workspace/localtool/apache-maven-3.0.5
-export PATH=$PATH:/System/Library/activator-1.2.1
+export PATH=$PATH:/System/Library/activator-1.2.10
+
+export SCALA_HOME=/Library/scala-2.11.4
+export PATH=$PATH:$SCALA_HOME/bin
+
+export PATH=/usr/local/share/python:$PATH
 
 alias .="cd ~"
 alias p="pwd"
@@ -46,3 +51,8 @@ alias vi='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias vim='env LANG=ja_JP.UTF-8 /Applications/MacVim.app/Contents/MacOS/Vim "$@"'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim -g'
 #eval "$(rbenv init -)"
+
+# Setting PATH for Python 2.7
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH
